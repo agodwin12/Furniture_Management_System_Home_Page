@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<style>
+
+    footer{
+        background: #d0d0d0;
+        padding-top: 50px;
+    }
+    .container{
+        width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-content{
+        width: 33.3%;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .footer-content p{
+        width: 190px;
+        margin: auto;
+        padding: 7px;
+    }
+    .footer-content ul{
+        text-align: center;
+    }
+    .list{
+        padding: 0;
+    }
+
+    .list li{
+        width: auto;
+        text-align: center;
+        list-style: none;
+        padding: 7px;
+        position: relative;
+    }
+    .list li::before{
+        content: "";
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left: 50%;
+        top: 50%;
+        width: 0;
+        height: 2px;
+        background: #058da7;
+        transition-duration: .5s;
+    }
+    .list li:hover::before{
+        width: 70px;
+    }
+    .social-icons{
+        text-align: center;
+        padding: 0;
+    }
+    .social-icons li{
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    }
+    .social-icons i{
+        color: white;
+        font-size: 25px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #058da7;
+    }
+    .social-icons i:hover{
+        color: #058da7;
+    }
+    .bottom-bar{
+        background: #058da7;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 50px;
+    }
+    .bottom-bar p{
+        color: white;
+        font-weight: bolder;
+    }
+    @media only screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .footer-content {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            text-align: left;
+        }
+
+        .footer-content p {
+            margin: auto;
+        }
+
+        .list,
+        .social-icons {
+            justify-content: center;
+        }
+
+        .list li {
+            padding: 5px 10px;
+        }
+
+        .social-icons li {
+            padding: 0 5px;
+        }
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stye3.css">
+    <title>HOME</title>
+</head>
+<body>
+<div class="body">
+
+    <header>
+        <div class="navbar">
+            <div class="wrapper">
+                <svg>
+                    <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                        Furniture
+                    </text>
+                </svg>
+            </div>
+
+            <ul class="links">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT US</a></li>
+            </ul>
+            <div class="icons">
+                <i class="fa fa-cloud"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-car"></i>
+                <img src="img/WhatsApp%20Image%202024-06-06%20at%208.35.52%20PM.jpeg" alt="" width="40px" height="40px" id="img">
+
+            </div>
+            <div class="toggleBtn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdownMeu">
+            <li><a href="">HOME</a></li>
+            <li><a href="">SHOP</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CONTACT US</a></li>
+
+            <i class="fa fa-cloud"></i>
+            <i class="fa fa-heart"></i>
+            <i class="fa fa-car"></i>
+            <img src="img/WhatsApp%20Image%202024-06-06%20at%208.35.52%20PM.jpeg" alt="" width="40px" height="40px">
+        </div>
+    </header>
+    <section class="main-img">
+        <div class="containerHero">
+            <h1><Span>Discover Your Perfect</Span></h1>
+            <span>Space</span>
+        </div>
+    </section>
+<section class="gridContainer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fa fa-shopping-bag"></i>
+            <p>Easy for Shopping</p>
+        </div>
+        <div class="box">
+            <i class='fa fa-car' ></i>
+            <p>Fast & Free Delivery</p>
+        </div>
+        <div class="box">
+            <i class="fa fa-phone"></i>
+            <p>24/7 Support</p>
+        </div>
+        <div class="box">
+            <i class="fa fa-usd"></i>
+            <p>Money-Back Guarantee</p>
+        </div>
+    </div>
+</section>
+    <section class="gridContainer2">
+
+        <div class="box-container2">
+
+            <div class="box2">
+
+            </div>
+            <div class="box3">
+                <h3>FURNITURE DESIGN IDEAS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+
+                    <a href="" class="btn">Shop Now<i class="fa fa-arrow-right"></i></a>
+                    <a href="" class="btn2">Follow Instagram</a>
+
+            </div>
+        </div>
+    </section>
+
+        <div class="parent">
+            <div class="div1">
+                <img src="img/3-removebg-preview.png" alt="">
+                <h2>TABLES</h2>
+                <p>Dinning </p>
+                <p>Center table</p>
+                <p>Coffee Table</p>
+                <p>JUNK Table</p>
+                <a href="">VIEW ALL<i class="fa fa-arrow-right"></i></a>
+
+            </div>
+            <div class="div2">
+                <img src="img/9-removebg-preview.png" alt="">
+                <h2>LIGHTS</h2>
+                <p>Chandelier</p>
+                <p>Table lamps</p>
+                <p>Floor lamps</p>
+                <a href="">VIEW ALL<i class="fa fa-arrow-right"></i></a>
+            </div>
+            <div class="div3">
+                <h2>GET DISCOUNT</h2>
+                <br>
+                <strong>30% OFFER</strong>
+            </div>
+            <div class="div4">
+                <img src="img/2-2-removebg-preview.png" alt="">
+                <h2>CHIARS</h2>
+                <p>Sitting Chiar</p>
+                <p>Office Chiar</p>
+                <p>Egg Chiar</p>
+                <p>Windsor Chiar</p>
+                <a href="">VIEW ALL<i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+    <section class="carts">
+        <h1>OUR PRODUCTS</h1>
+        <div class="all-products">
+            <div class="products">
+                <img src="img/1.jpeg" alt="">
+                <div class="product-info">
+                    <a href="" class="product-btn">BROWN CHIAR<i class="fa fa-shopping-cart" ></i></a>
+                </div>
+            </div>
+            <div class="products">
+                <img src="img/2.webp" alt="">
+                <div class="product-info">
+                    <a href="" class="product-btn">BROWN CHIAR<i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="products">
+                <img src="img/3.webp" alt="">
+                <div class="product-info">
+                    <a href="" class="product-btn">BROWN CHIAR<i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="products">
+                <img src="img/4.webp" alt="">
+                <div class="product-info">
+                    <a href="" class="product-btn">BROWN CHIAR<i class="fa fa-shopping-cart" ></i></a>
+                </div>
+            </div>
+            <div class="products">
+                <img src="img/5.webp" alt="">
+                <div class="product-info">
+                    <a href="" class="product-btn">BROWN CHIAR<i class="fa fa-shopping-cart" ></i></a>
+                </div>
+            </div>
+            <div class="products">
+                <img src="img/6.jpg" alt="">
+                <div class="product-info">
+                    <a href="" class="product-btn">BROWN CHIAR<i class="fa fa-shopping-cart" ></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+<button onclick="logout()">logout</button>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>E-mail: info@holidaybootcamp@gmail.com</p>
+            <p>phone: 423-321-091</p>
+            <p>Address: Logpom Douala</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <ul class="list">
+                <li><a href="">HOME</a></li>
+                <li><a href="">SHOP</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">ABOUTUS</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-snapchat"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>@2024 JULY HOLIDAY BOOTCAMP</p>
+    </div>
+</footer>
+
+<script>
+    const toggleBtn = document.querySelector('.toggleBtn')
+    const toggleBtnIcon =document.querySelector('.toggleBtn i')
+    const dropdownMenu = document.querySelector('.dropdownMeu')
+
+    toggleBtn.onclick = function (){
+        dropdownMenu.classList.toggle('open')
+        const isOpen = dropdownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa fa-bars'
+            :'fa fa-close'
+    }
+
+  
+</script>
+
+</body>
+</html>

@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100%;
+    background: linear-gradient(#093649, #23758d);
+}
+.body{
+    height: 100%;
+    width: 90%;
+    margin-left: 70px;
+    background-color: #d0d0d0;
+    box-shadow: -3px -10px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px -10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px -10px 5px 0px rgba(0,0,0,0.75);;
+    margin-bottom: 50px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+a:hover{
+    color: blue;
+}
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+svg {
+    font-family: "Rubik Pixels", sans-serif;
+    width: 100%; height: 100%;
+}
+svg text {
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365FA0;
+    font-size: 100px;
+}
+@keyframes stroke {
+    0%   {
+        fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1);
+        stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); }
+    80%  {fill: rgba(72,138,204,0); stroke: rgba(54,95,160,1); stroke-width: 3; }
+    100% {
+        fill: rgba(72,138,204,1); stroke: rgba(54,95,160,0);
+        stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+.navbar .toggleBtn{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.navbar .icons i{
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    display: inline-block;
+    cursor: pointer;
+}
+.navbar .icons img{
+    border-radius: 50%;
+}
+.dropdownMeu{
+    display: none;
+    position: absolute;
+    height: 0;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175,0.885,0.32,1.275);
+}
+.dropdownMeu.open{
+    height: 240px;
+}
+.dropdownMeu li{
+    padding: 00.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-img{
+    position: relative;
+    background: url("img/sofa.png") no-repeat center;
+    background-size: cover;
+    width: 90%;
+    height: 500px;
+    overflow: hidden;
+    margin-left: 70px;
+    border-radius: 30px;
+
+}
+.containerHero{
+
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    transform: translate(-20%, -20%);
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+.containerHero h1{
+    font-family: 'Playwrite AR', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.containerHero h1 span{
+    font-family: 'Playwrite AR', cursive;
+
+}
+.gridContainer{
+    padding: 15px 9%;
+    padding-bottom: 10px;
+
+}
+.gridContainer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 15px;
+
+}
+.gridContainer .box-container .box{
+    box-shadow: -3px -10px 54px 15px rgba(202,199,199,0.75);
+    -webkit-box-shadow: -3px -10px 54px 15px rgba(202,199,199,0.75);
+    -moz-box-shadow: -3px -10px 54px 15px rgba(202,199,199,0.75);
+    border-radius: 10px;
+    height: 90px;
+    text-align: center;
+    background-color: white;
+}
+.gridContainer .box-container i{
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 10px;
+    color: #058da7;
+}
+.gridContainer .box-container p{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.gridContainer .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.02);
+    transition: .5s ease-in-out;
+}
+.gridContainer2{
+    padding: 15px 9%;
+    padding-bottom: 10px;
+}
+.gridContainer2 .box-container2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 15px;
+}
+.gridContainer2 .box-container2 .box2{
+    background: url("img/grid2image.webp") no-repeat center;
+    height: 270px;
+    border-radius: 20px;
+}
+.gridContainer2 .box-container2 .box3{
+    background: white;
+    height: 270px;
+    border-radius: 20px;
+}
+.gridContainer2 .box-container2 .box3 h3{
+    border: 1px solid #058da7;
+    margin-top: 15px;
+    background: skyblue;
+    width: 50%;
+    margin-left: 50px;
+    border-radius: 65px;
+    justify-content: center;
+    color: #058da7;
+}
+.gridContainer2 .box-container2 .box3 p{
+    display: block;
+    margin-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.gridContainer2 .box-container2 .box3 .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background: #058da7;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-left: 50px;
+}
+.gridContainer2 .box-container2 .box3 .bt2{
+    margin-top: 10px;
+    display: inline-block;
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-left: 50px;
+    box-shadow: -3px -10px 54px 15px rgba(202,199,199,0.75);
+    -webkit-box-shadow: -3px -10px 54px 15px rgba(202,199,199,0.75);
+    -moz-box-shadow: -3px -10px 54px 15px rgba(202,199,199,0.75);
+
+}
+.gridContainer2 .box-container2 .box3 .bt2,.btn:hover{
+    letter-spacing: 1px;
+    transition: .3s ease-in-out;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    padding: 15px 9%;
+    margin-bottom: -790px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: #f5f5f5;
+    height: 190px;
+    width: 120%;
+    border-radius: 22px;
+    padding-left: 30px;
+    padding-top: 10px;
+
+}
+.div1 img{
+    height: 100%;
+    width: 40%;
+    float: right;
+}
+.div1 p{
+    line-height: 1.8;
+}
+.div1 a{
+    color: #1f596f;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: #feefdc;
+    width: 140%;
+    border-radius: 22px;
+    padding-left: 10px;
+
+}
+.div2 img{
+    float: right;
+    height: 100%;
+    width:60%;
+}
+.div2 a{
+    color: #1f596f;
+}
+.div3 {
+    grid-area: 2 / 2 / 3 / 3;
+    background: linear-gradient(#093649, #23758d);
+    width: 120%;
+    margin-left: 90px;
+    border-radius: 22px;
+
+
+}
+.div3 h2{
+    color: white;
+    background: orange;
+    border: 1px solid orange;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: 18px;
+}
+.div3 strong{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    margin-left: 28px;
+}
+.div4 {
+    grid-area: 1 / 4 / 3 / 6;
+    background: #ecedf2;
+    margin-left: -90px;
+    border-radius: 22px;
+    padding-left: 30px;
+}
+.div4 img{
+    float: right;
+    height: 100%;
+    width: 60%;
+}
+.div4 h2{
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+.div4 p{
+    line-height: 3;
+}
+.div4 a{
+    color: #1f596f;
+
+}
+
+.carts{
+    padding: 15px 9%;
+    padding-top: 190px;
+
+}
+.carts img {
+    height: 300px;
+    margin: 1rem;
+}
+.carts h1{
+    text-align: center;
+    text-shadow: -1px -2px 26px rgba(0,0,0,0.6);
+    color: #058da7;
+}
+.carts .all-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.carts .all-products .products{
+    border-radius: 22px;
+    overflow: hidden;
+    background: #ffffff;
+    color: white;
+    text-align: center;
+    width: 240px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.carts .all-products .products:hover{
+    box-shadow: 5px 15px 25px #058da7;
+    border: 2px solid black;
+}
+.carts .all-products .products .product-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.carts .all-products .products .product-btn i{
+    margin-left: 15px;
+    border-radius: 50%;
+    background: white;
+    color: black;
+    padding: 10px;
+
+}
+.carts .all-products .products a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1f596f;
+    padding: 1.5rem 2.7rem;
+    margin-top: -1rem;
+    transition: all 0.2s;
+    font-size: 15px;
+    float: left;
+    margin-bottom: 30px;
+}
+.carts .all-products .products a i{
+    color: white;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.carts .all-products .products a:hover{
+    background-color: #058da7;
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar .links,
+    .navbar .icons {
+        display: none;
+    }
+
+    .navbar .toggleBtn {
+        display: block;
+    }
+
+    .dropdownMeu {
+        display: block;
+    }
+    .gridContainer{
+        padding: 20px;
+    }
+    .gridContainer2{
+        display: block;
+        padding: 20px;
+    }
+    .gridContainer2 .box-container2 .box3 {
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .gridContainer2 .box-container2 .box3 h3 {
+        width: 70%;
+        margin-left: 15px;
+        border-radius: 40px;
+        font-size: 18px;
+    }
+
+    .gridContainer2 .box-container2 .box3 p {
+        font-size: 16px;
+    }
+
+    .gridContainer2 .box-container2 .box3 .btn,
+    .gridContainer2 .box-container2 .box3 .bt2 {
+        font-size: 18px;
+        padding: 5px 10px;
+        margin-left: 15px;
+    }
+}
+
+
+.gridContainer2 .box-container2 .box3 h3 {
+    width: 80%;
+    margin-left: 10px;
+}
+
+.gridContainer2 .box-container2 .box3 p,
+.gridContainer2 .box-container2 .box3 .btn,
+.gridContainer2 .box-container2 .box3 .bt2 {
+    font-size: 14px;
+}
+
+
